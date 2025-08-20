@@ -1,0 +1,154 @@
+/* ===============================================
+   HEADER SECTION
+   =============================================== */
+
+/* Header layout */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0px; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.zag {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+}
+
+.nachtex {
+  color: var(--blue-color);
+}
+
+.kontexq {
+  color: var(--black-color);
+}
+
+.kontex {
+  color: var(--white-color);
+}
+.header_li {
+  color: #000;
+}
+
+/* Navigation */
+.nav_sps {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  column-gap: 50px;
+  align-items: center;
+  margin-left: -250px;
+}
+
+.nav_sps_nach {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  row-gap: 50px;
+  padding-top: 33px;
+  padding-bottom: 33px;
+}
+
+.nav_sps_nach::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 0;
+  background-color: var(--blue-color);
+    transition-property: height;
+  transition-duration: 250ms;
+  /* transition: width 0.3s ease; */
+
+  border-radius: 2px;
+}
+
+.current::after {
+  width: 100%;
+}
+
+.current:hover::after  {
+  height: 0px;
+  transition-property: height;
+  transition-duration: 250ms;
+}
+
+
+.nav_sps_nachinochka {
+  display: flex;
+  justify-content: space-around;
+  color: var(--another-black);
+}
+
+.nav_sps_nachinochka:hover, .nav_sps_nachinochka:focus {
+  color: var(--blue-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.active {
+  color: var(--blue-color);
+}
+
+/* Contact information */
+.spisokkont {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  column-gap: 50px;
+  align-items: center;
+}
+
+.spisokkont_nach {
+  display: flex;
+  text-align: center;
+  fill: var(--grey-color);
+  width: 161px;
+}
+
+.spisokkont_nach:hover, .spisokkont_nach:focus {
+  display: flex;
+  text-align: center;
+  fill: var(--blue-color);
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.spisokkont_nachinochka {
+  color: var(--grey-color);
+}
+
+.spisokkont_nachinochka:hover, .spisokkont_nachinochka:focus {
+  color: var(--blue-color);
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.spisokkont_svg {
+  width: 16px;
+  height: 12px;
+  margin-right: 5px;
+  margin: 0;
+}
+
+.spisokkont_svg:hover, .spisokkont_svg:focus {
+  fill: var(--blue-color);
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swg_phone {
+  width: 10px;
+  height: 16px;
+}

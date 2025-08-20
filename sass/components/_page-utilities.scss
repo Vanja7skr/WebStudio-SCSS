@@ -1,0 +1,65 @@
+/* ===============================================
+   CSS VARIABLES & GLOBAL STYLES
+   =============================================== */
+
+
+
+body {
+  font-family: var(--font-family);
+  letter-spacing: 0.02em;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Container */
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+/* Hidden elements */
+
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* Unused/deprecated classes */
+.osoblivosti_zag {
+  display: none;
+}
+
+.del {
+  display: none;
+}
+
+
+.hr {
+  margin-top: -1px;
+}
+
+
+
+
+/* ===============================================
+   UTILITY CLASSES
+   =============================================== */
+
+.coitainer {
+  flex-direction: row;
+}
+.no-scroll {
+  overflow: hidden;
+}

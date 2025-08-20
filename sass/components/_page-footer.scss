@@ -1,0 +1,144 @@
+/* ===============================================
+   FOOTER SECTION
+   =============================================== */
+
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--black-grey-color);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer {
+  width: 231px;
+}
+
+.zagi {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+}
+
+.foot {
+  display: flex;
+  align-items: center;
+  column-gap: 70px;
+}
+
+/* Footer address */
+.footer_adr {
+  padding-top: 20px;
+  font-style: normal;
+}
+
+.footer_adr_txt {
+  color: var(--white-color);
+  width: 231px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer_adr_sps_nach {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer_adr_sps_nachi {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.footer_adr_sps_nachinochka {
+  color: var(--light-grey-color);
+}
+
+/* Footer social media */
+.foot_h2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.swg_foot_b {
+  background-color: rgb(67, 68, 77);
+  fill: white;
+}
+
+/* Footer subscription */
+.pidps_div {
+  display: flex;
+}
+
+.media {
+  width: 206px;
+}
+
+.pidps_s {
+  margin-right: 175px;
+}
+
+.pidps {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.pidps-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: rgba(33, 150, 243, 0);
+  padding-left: 10px;
+  color: white;
+}
+
+.pidps-sub {
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #2196f3;
+  color: white;
+  display: flex;
+  padding-top: 6px;
+  margin-left: 12px;
+  align-items: center;
+}
+
+.pidps-sub-span {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #fff;
+  margin-left: 28px;
+  margin-right: 10px;
+}
+
+.pidps-sub-s {
+  background-image: url(../img/plane.png);
+  width: 24px;
+  height: 24px;
+}

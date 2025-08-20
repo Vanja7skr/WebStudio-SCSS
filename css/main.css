@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700;900&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -54,61 +56,6 @@ table {
 
 a {
   text-decoration-line: none;
-}
-
-/* ===============================================
-   CSS VARIABLES & GLOBAL STYLES
-   =============================================== */
-:root {
-  --social_color: rgba(175, 177, 184, 1);
-  --our_t_color: rgba(245, 244, 250, 1);
-  --black-color: rgba(0, 0, 0, 1);
-  --another-black: rgba(33, 33, 33, 1);
-  --grey-color: rgba(117, 117, 117, 1);
-  --black-grey-color: rgba(47, 48, 58, 1);
-  --blue-color: rgba(33, 150, 243, 1);
-  --white-color: rgba(255, 255, 255, 1);
-  --light-grey-color: rgba(255, 255, 255, 0.6);
-  --font-family: "Roboto", sans-serif;
-  --second-family: "Raleway", sans-serif;
-}
-
-body {
-  font-family: var(--font-family);
-  letter-spacing: 0.02em;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-/* Container */
-.container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
-}
-
-/* Hidden elements */
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
-/* Unused/deprecated classes */
-.osoblivosti_zag {
-  display: none;
-}
-
-.del {
-  display: none;
 }
 
 /* ===============================================
@@ -890,6 +837,187 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ===========================
+   MAIN CONTENT - PORTFOLIO SECTION
+   =========================== */
+/* Portfolio Section Container */
+.portfolio {
+  margin: 94px 0;
+}
+
+/* Portfolio Filter Buttons */
+.portfolio_sps {
+  margin-bottom: 50px;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio_sps_nach {
+  font-family: var(--font-family);
+}
+
+.portfolio_sps_nachinochka {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border: 0;
+  border-radius: 4px;
+  padding: 6px 22px;
+  background-color: #F5F4FA;
+  color: var(--another-black);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.portfolio_sps_nachinochka:hover,
+.portfolio_sps_nachinochka:focus {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Portfolio Items Grid */
+.spspnapov {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 34px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.header_li {
+  color: #000;
+}
+
+.header_li:hover,
+.header_li:active {
+  color: var(--blue-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Individual Portfolio Items */
+.spspnapov_nach {
+  background-color: var(--white-color);
+  border: 1px solid #EEEEEE;
+  height: 403px;
+  width: 370px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.spspnapov_nach_div {
+  flex-basis: calc((100% - 60px) / 3);
+  width: 370px;
+  height: 294px;
+}
+
+/* Image container with overlay */
+.spspnapov_nach_img_container {
+  position: relative;
+  overflow: hidden;
+  height: 294px;
+}
+
+.port_list_hov {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 64px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: #fff;
+  /* transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+@keyframes hov {
+  0% {
+    top: 100%;
+    left: 0;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes hovdown {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+    left: 0;
+  }
+}
+.port_list_hov:not(:hover) {
+  animation: hovdown 250ms;
+}
+
+.spspnapov_nach:hover .port_list_hov {
+  animation: hov 250ms forwards ease-in-out;
+}
+
+.spspnapov_nach:hover {
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
+  transition-duration: 250ms;
+}
+
+.spspnapov_nach_img {
+  width: 100%;
+  height: 294px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.spspnapov_nach_zag {
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--another-black);
+  margin: 0;
+}
+
+.spspnapov_nachinochka {
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--grey-color);
+  margin: 0;
+}
+
 /* ===============================================
    FOOTER SECTION
    =============================================== */
@@ -1036,6 +1164,51 @@ footer {
 }
 
 /* ===============================================
+   CSS VARIABLES & GLOBAL STYLES
+   =============================================== */
+body {
+  font-family: var(--font-family);
+  letter-spacing: 0.02em;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Container */
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+/* Hidden elements */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* Unused/deprecated classes */
+.osoblivosti_zag {
+  display: none;
+}
+
+.del {
+  display: none;
+}
+
+.hr {
+  margin-top: -1px;
+}
+
+/* ===============================================
    UTILITY CLASSES
    =============================================== */
 .coitainer {
@@ -1044,4 +1217,18 @@ footer {
 
 .no-scroll {
   overflow: hidden;
+}
+
+:root {
+  --social_color: rgba(175, 177, 184, 1);
+  --our_t_color: rgba(245, 244, 250, 1);
+  --black-color: rgba(0, 0, 0, 1);
+  --another-black: rgba(33, 33, 33, 1);
+  --grey-color: rgba(117, 117, 117, 1);
+  --black-grey-color: rgba(47, 48, 58, 1);
+  --blue-color: rgba(33, 150, 243, 1);
+  --white-color: rgba(255, 255, 255, 1);
+  --light-grey-color: rgba(255, 255, 255, 0.6);
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
 }/*# sourceMappingURL=main.css.map */

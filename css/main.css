@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700;900&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -58,6 +57,20 @@ a {
   text-decoration-line: none;
 }
 
+:root {
+  --social_color: rgba(175, 177, 184, 1);
+  --our_t_color: rgba(245, 244, 250, 1);
+  --black-color: rgba(0, 0, 0, 1);
+  --another-black: rgba(33, 33, 33, 1);
+  --grey-color: rgba(117, 117, 117, 1);
+  --black-grey-color: rgba(47, 48, 58, 1);
+  --blue-color: rgba(33, 150, 243, 1);
+  --white-color: rgba(255, 255, 255, 1);
+  --light-grey-color: rgba(255, 255, 255, 0.6);
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
+}
+
 /* ===============================================
    HEADER SECTION
    =============================================== */
@@ -73,26 +86,26 @@ a {
 
 /* Logo */
 .zag {
-  font-family: var(--second-family);
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
 }
 
 .nachtex {
-  color: var(--blue-color);
+  color: rgb(33, 150, 243);
 }
 
 .kontexq {
-  color: var(--black-color);
+  color: rgb(0, 0, 0);
 }
 
 .kontex {
-  color: var(--white-color);
+  color: rgb(255, 255, 255);
 }
 
 .header_li {
-  color: #000;
+  color: rgb(0, 0, 0);
 }
 
 /* Navigation */
@@ -124,7 +137,7 @@ a {
   left: 0;
   height: 4px;
   width: 0;
-  background-color: var(--blue-color);
+  background-color: rgb(33, 150, 243);
   transition-property: height;
   transition-duration: 250ms;
   /* transition: width 0.3s ease; */
@@ -144,17 +157,17 @@ a {
 .nav_sps_nachinochka {
   display: flex;
   justify-content: space-around;
-  color: var(--another-black);
+  color: rgb(33, 33, 33);
 }
 
 .nav_sps_nachinochka:hover, .nav_sps_nachinochka:focus {
-  color: var(--blue-color);
+  color: rgb(33, 150, 243);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .active {
-  color: var(--blue-color);
+  color: rgb(33, 150, 243);
 }
 
 /* Contact information */
@@ -172,24 +185,24 @@ a {
 .spisokkont_nach {
   display: flex;
   text-align: center;
-  fill: var(--grey-color);
+  fill: rgb(117, 117, 117);
   width: 161px;
 }
 
 .spisokkont_nach:hover, .spisokkont_nach:focus {
   display: flex;
   text-align: center;
-  fill: var(--blue-color);
+  fill: rgb(33, 150, 243);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .spisokkont_nachinochka {
-  color: var(--grey-color);
+  color: rgb(117, 117, 117);
 }
 
 .spisokkont_nachinochka:hover, .spisokkont_nachinochka:focus {
-  color: var(--blue-color);
+  color: rgb(33, 150, 243);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -202,7 +215,7 @@ a {
 }
 
 .spisokkont_svg:hover, .spisokkont_svg:focus {
-  fill: var(--blue-color);
+  fill: rgb(33, 150, 243);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -224,7 +237,7 @@ a {
 }
 
 .ssilochka_zag {
-  color: var(--white-color);
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
@@ -236,8 +249,8 @@ a {
 }
 
 .ssilochka_knopk {
-  background-color: var(--blue-color);
-  color: var(--white-color);
+  background-color: rgb(33, 150, 243);
+  color: rgb(255, 255, 255);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -346,12 +359,12 @@ a {
 }
 
 .spsphot_nach_p {
-  color: var(--white-color);
+  color: rgb(255, 255, 255);
   background-color: rgba(47, 48, 58, 0.8);
   height: 70px;
   position: relative;
   top: -70px;
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -363,7 +376,7 @@ a {
 
 /* Team section */
 .command {
-  background-color: var(--our_t_color);
+  background-color: rgb(245, 244, 250);
 }
 
 .command_zag {
@@ -390,7 +403,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--white-color);
+  background-color: rgb(255, 255, 255);
   height: 428px;
   border-radius: 5px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
@@ -412,9 +425,9 @@ a {
 }
 
 .command_sps_nach_txt {
-  color: var(--grey-color);
+  color: rgb(117, 117, 117);
   padding-bottom: 30px;
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -440,7 +453,7 @@ a {
 }
 
 .te_sps_li_svg {
-  fill: var(--grey-color);
+  fill: rgb(117, 117, 117);
   width: 44px;
   height: 44px;
   padding: 12px;
@@ -450,7 +463,7 @@ a {
 
 .te_sps_li_svg:hover, .te_sps_li_svg:focus {
   fill: white;
-  background-color: var(--blue-color);
+  background-color: rgb(33, 150, 243);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -458,7 +471,7 @@ a {
 .command_sps_nach_sps_li_a_img {
   width: 20px;
   height: 20px;
-  color: var(--social_color);
+  color: rgb(175, 177, 184);
 }
 
 /* Clients section */
@@ -488,8 +501,8 @@ a {
 }
 
 .clients_li:hover, .clients_li:focus {
-  fill: var(--blue-color);
-  border-color: var(--blue-color);
+  fill: rgb(33, 150, 243);
+  border-color: rgb(33, 150, 243);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -648,7 +661,7 @@ a {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -685,7 +698,7 @@ a {
 .formfield-input:active {
   border: none;
   outline: none;
-  border: 1px solid var(--blue-color);
+  border: 1px solid rgb(33, 150, 243);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -693,7 +706,7 @@ a {
 .formfield-input:hover + svg use,
 .formfield-input:focus + svg use,
 .formfield-input:active + svg use {
-  fill: var(--blue-color);
+  fill: rgb(33, 150, 243);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -860,7 +873,7 @@ a {
 }
 
 .portfolio_sps_nach {
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
 }
 
 .portfolio_sps_nachinochka {
@@ -873,15 +886,15 @@ a {
   border-radius: 4px;
   padding: 6px 22px;
   background-color: #F5F4FA;
-  color: var(--another-black);
+  color: rgb(0, 0, 0);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .portfolio_sps_nachinochka:hover,
 .portfolio_sps_nachinochka:focus {
-  background-color: var(--blue-color);
-  color: var(--white-color);
+  background-color: rgb(33, 150, 243);
+  color: rgb(255, 255, 255);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -905,14 +918,14 @@ a {
 
 .header_li:hover,
 .header_li:active {
-  color: var(--blue-color);
+  color: rgb(33, 150, 243);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Individual Portfolio Items */
 .spspnapov_nach {
-  background-color: var(--white-color);
+  background-color: rgb(255, 255, 255);
   border: 1px solid #EEEEEE;
   height: 403px;
   width: 370px;
@@ -941,7 +954,7 @@ a {
   width: 100%;
   padding: 64px 24px;
   background-color: rgba(33, 150, 243, 0.9);
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 156%;
@@ -1002,7 +1015,7 @@ a {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--another-black);
+  color: rgb(117, 117, 117);
   margin: 0;
 }
 
@@ -1014,7 +1027,7 @@ a {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: var(--grey-color);
+  color: rgb(117, 117, 117);
   margin: 0;
 }
 
@@ -1024,7 +1037,7 @@ a {
 footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--black-grey-color);
+  background-color: rgb(47, 48, 58);
   display: flex;
   justify-content: space-evenly;
 }
@@ -1034,7 +1047,7 @@ footer {
 }
 
 .zagi {
-  font-family: var(--second-family);
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
@@ -1054,7 +1067,7 @@ footer {
 }
 
 .footer_adr_txt {
-  color: var(--white-color);
+  color: rgb(255, 255, 255);
   width: 231px;
   font-weight: 400;
   font-size: 14px;
@@ -1079,12 +1092,12 @@ footer {
 }
 
 .footer_adr_sps_nachinochka {
-  color: var(--light-grey-color);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* Footer social media */
 .foot_h2 {
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -1112,7 +1125,7 @@ footer {
 }
 
 .pidps {
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -1146,7 +1159,7 @@ footer {
 }
 
 .pidps-sub-span {
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 187%;
@@ -1167,7 +1180,7 @@ footer {
    CSS VARIABLES & GLOBAL STYLES
    =============================================== */
 body {
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.02em;
   font-size: 14px;
   font-weight: 500;
@@ -1217,18 +1230,4 @@ body {
 
 .no-scroll {
   overflow: hidden;
-}
-
-:root {
-  --social_color: rgba(175, 177, 184, 1);
-  --our_t_color: rgba(245, 244, 250, 1);
-  --black-color: rgba(0, 0, 0, 1);
-  --another-black: rgba(33, 33, 33, 1);
-  --grey-color: rgba(117, 117, 117, 1);
-  --black-grey-color: rgba(47, 48, 58, 1);
-  --blue-color: rgba(33, 150, 243, 1);
-  --white-color: rgba(255, 255, 255, 1);
-  --light-grey-color: rgba(255, 255, 255, 0.6);
-  --font-family: "Roboto", sans-serif;
-  --second-family: "Raleway", sans-serif;
 }/*# sourceMappingURL=main.css.map */

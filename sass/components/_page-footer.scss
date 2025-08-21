@@ -1,11 +1,12 @@
 /* ===============================================
    FOOTER SECTION
    =============================================== */
+@use "../abstract/variables";
 
 footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--black-grey-color);
+  background-color: variables.$black-grey-color;
   display: flex;
   justify-content: space-evenly;
 }
@@ -15,7 +16,7 @@ footer {
 }
 
 .zagi {
-  font-family: var(--second-family);
+  font-family: variables.$second-family;
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
@@ -34,7 +35,7 @@ footer {
 }
 
 .footer_adr_txt {
-  color: var(--white-color);
+  color: variables.$white-color;
   width: 231px;
   font-weight: 400;
   font-size: 14px;
@@ -59,12 +60,12 @@ footer {
 }
 
 .footer_adr_sps_nachinochka {
-  color: var(--light-grey-color);
+  color: variables.$light-grey-color;
 }
 
 /* Footer social media */
 .foot_h2 {
-  font-family: var(--font-family);
+  font-family: variables.$font-family;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -92,7 +93,7 @@ footer {
 }
 
 .pidps {
-  font-family: var(--font-family);
+  font-family: variables.$font-family;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -126,7 +127,7 @@ footer {
 }
 
 .pidps-sub-span {
-  font-family: var(--font-family);
+  font-family: variables.$font-family;
   font-weight: 700;
   font-size: 16px;
   line-height: 187%;

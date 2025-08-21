@@ -2,6 +2,8 @@
    HEADER SECTION
    =============================================== */
 
+@use "../abstract/variables";
+
 /* Header layout */
 .flex-container {
   display: flex;
@@ -14,25 +16,25 @@
 
 /* Logo */
 .zag {
-  font-family: var(--second-family);
+  font-family: variables.$second-family;
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
 }
 
 .nachtex {
-  color: var(--blue-color);
+  color: variables.$blue-color;
 }
 
 .kontexq {
-  color: var(--black-color);
+  color: variables.$black-color;
 }
 
 .kontex {
-  color: var(--white-color);
+  color: variables.$white-color;
 }
 .header_li {
-  color: #000;
+  color: variables.$black-color;
 }
 
 /* Navigation */
@@ -63,7 +65,7 @@
   left: 0;
   height: 4px;
   width: 0;
-  background-color: var(--blue-color);
+  background-color: variables.$blue-color;
     transition-property: height;
   transition-duration: 250ms;
   /* transition: width 0.3s ease; */
@@ -85,18 +87,18 @@
 .nav_sps_nachinochka {
   display: flex;
   justify-content: space-around;
-  color: var(--another-black);
+  color: variables.$another-black;
 }
 
 .nav_sps_nachinochka:hover, .nav_sps_nachinochka:focus {
-  color: var(--blue-color);
+  color: variables.$blue-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 .active {
-  color: var(--blue-color);
+  color: variables.$blue-color;
 }
 
 /* Contact information */
@@ -113,24 +115,24 @@
 .spisokkont_nach {
   display: flex;
   text-align: center;
-  fill: var(--grey-color);
+  fill: variables.$grey-color;
   width: 161px;
 }
 
 .spisokkont_nach:hover, .spisokkont_nach:focus {
   display: flex;
   text-align: center;
-  fill: var(--blue-color);
+  fill: variables.$blue-color;
     transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .spisokkont_nachinochka {
-  color: var(--grey-color);
+  color: variables.$grey-color;
 }
 
 .spisokkont_nachinochka:hover, .spisokkont_nachinochka:focus {
-  color: var(--blue-color);
+  color: variables.$blue-color;
     transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -143,7 +145,7 @@
 }
 
 .spisokkont_svg:hover, .spisokkont_svg:focus {
-  fill: var(--blue-color);
+  fill: variables.$blue-color;
     transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

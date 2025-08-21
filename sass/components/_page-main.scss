@@ -1,8 +1,13 @@
+
 /* ===============================================
    MAIN CONTENT SECTIONS
    =============================================== */
 
 /* Hero section */
+
+@use "../abstract/variables";
+
+
 .ssilochka {
   background-image: url(../img/iimg.png);
   margin: 0 auto;
@@ -11,7 +16,7 @@
 }
 
 .ssilochka_zag {
-  color: var(--white-color);
+  color: variables.$white-color;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
@@ -23,8 +28,8 @@
 }
 
 .ssilochka_knopk {
-  background-color: var(--blue-color);
-  color: var(--white-color);
+  background-color: variables.$blue-color;
+  color: variables.$white-color;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -133,12 +138,12 @@
 }
 
 .spsphot_nach_p {
-  color: var(--white-color);
+  color: variables.$white-color;
   background-color: rgba(47, 48, 58, 0.8);
   height: 70px;
   position: relative;
   top: -70px;
-  font-family: var(--font-family);
+  font-family: variables.$font-family;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -150,7 +155,7 @@
 
 /* Team section */
 .command {
-  background-color: var(--our_t_color);
+  background-color: variables.$our_t_color;
 }
 
 .command_zag {
@@ -177,7 +182,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--white-color);
+  background-color: variables.$white-color;
   height: 428px;
   border-radius: 5px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
@@ -199,9 +204,9 @@
 }
 
 .command_sps_nach_txt {
-  color: var(--grey-color);
+  color: variables.$grey-color;
   padding-bottom: 30px;
-  font-family: var(--font-family);
+  font-family: variables.$font-family;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -226,7 +231,7 @@
 }
 
 .te_sps_li_svg {
-  fill: var(--grey-color);
+  fill: variables.$grey-color;
   width: 44px;
   height: 44px; 
   padding: 12px;
@@ -236,7 +241,7 @@
 
 .te_sps_li_svg:hover, .te_sps_li_svg:focus  {
   fill: white;
-  background-color: var(--blue-color);
+  background-color: variables.$blue-color;
     transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -244,7 +249,7 @@
 .command_sps_nach_sps_li_a_img {
   width: 20px;
   height: 20px;
-  color: var(--social_color);
+  color: variables.$social_color;
 }
 
 /* Clients section */
@@ -274,8 +279,8 @@
 }
 
 .clients_li:hover, .clients_li:focus {
-  fill: var(--blue-color);
-  border-color: var(--blue-color);
+  fill: variables.$blue-color;
+  border-color: variables.$blue-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -448,7 +453,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: var(--font-family);
+  font-family: variables.$font-family;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -492,7 +497,7 @@
 .formfield-input:active {
   border: none;
   outline: none;
-  border: 1px solid var(--blue-color);
+  border: 1px solid variables.$blue-color;
     transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -500,7 +505,7 @@
 .formfield-input:hover + svg use,
 .formfield-input:focus + svg use,
 .formfield-input:active + svg use {
-  fill: var(--blue-color);
+  fill: variables.$blue-color;
     transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

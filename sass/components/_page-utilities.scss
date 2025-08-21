@@ -2,10 +2,10 @@
    CSS VARIABLES & GLOBAL STYLES
    =============================================== */
 
-
+@use "../abstract/variables";
 
 body {
-  font-family: var(--font-family);
+  font-family: variables.$font-family;
   letter-spacing: 0.02em;
   font-size: 14px;
   font-weight: 500;

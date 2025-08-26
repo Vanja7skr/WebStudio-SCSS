@@ -95,7 +95,7 @@ a {
 }
 
 /* Navigation */
-.nav_sps {
+.nav__gallery {
   display: flex;
   list-style-type: none;
   padding: 0;
@@ -107,7 +107,7 @@ a {
   margin-left: -250px;
 }
 
-.nav_sps_nach {
+.nav__item {
   position: relative;
   text-decoration: none;
   color: #000;
@@ -116,7 +116,7 @@ a {
   padding-bottom: 33px;
 }
 
-.nav_sps_nach::after {
+.nav__item::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -140,13 +140,13 @@ a {
   transition-duration: 250ms;
 }
 
-.nav_sps_nachinochka {
+.nav__logo {
   display: flex;
   justify-content: space-around;
   color: rgb(33, 33, 33);
 }
 
-.nav_sps_nachinochka:hover, .nav_sps_nachinochka:focus {
+.nav__logo:hover, .nav__logo:focus {
   color: rgb(33, 150, 243);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -157,7 +157,7 @@ a {
 }
 
 /* Contact information */
-.spisokkont {
+.header__gallery {
   display: flex;
   list-style-type: none;
   padding: 0;
@@ -168,14 +168,14 @@ a {
   align-items: center;
 }
 
-.spisokkont_nach {
+.header__item {
   display: flex;
   text-align: center;
   fill: rgb(117, 117, 117);
   width: 161px;
 }
 
-.spisokkont_nach:hover, .spisokkont_nach:focus {
+.header__item:hover, .header__item:focus {
   display: flex;
   text-align: center;
   fill: rgb(33, 150, 243);
@@ -183,24 +183,24 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.spisokkont_nachinochka {
+.header__logo--contact {
   color: rgb(117, 117, 117);
 }
 
-.spisokkont_nachinochka:hover, .spisokkont_nachinochka:focus {
+.header__logo--contact:hover, .header__logo--contact:focus {
   color: rgb(33, 150, 243);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.spisokkont_svg {
+.header__icon {
   width: 16px;
   height: 12px;
   margin-right: 5px;
   margin: 0;
 }
 
-.spisokkont_svg:hover, .spisokkont_svg:focus {
+.header__icon:hover, .header__icon:focus {
   fill: rgb(33, 150, 243);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

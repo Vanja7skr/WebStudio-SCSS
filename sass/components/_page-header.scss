@@ -38,7 +38,7 @@
 }
 
 /* Navigation */
-.nav_sps {
+.nav__gallery {
   display: flex;
   list-style-type: none;
   padding: 0;
@@ -49,7 +49,7 @@
   margin-left: -250px;
 }
 
-.nav_sps_nach {
+.nav__item {
   position: relative;
   text-decoration: none;
   color: #000;
@@ -58,7 +58,7 @@
   padding-bottom: 33px;
 }
 
-.nav_sps_nach::after {
+.nav__item::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -84,13 +84,13 @@
 }
 
 
-.nav_sps_nachinochka {
+.nav__logo {
   display: flex;
   justify-content: space-around;
   color: variables.$another-black;
 }
 
-.nav_sps_nachinochka:hover, .nav_sps_nachinochka:focus {
+.nav__logo:hover, .nav__logo:focus {
   color: variables.$blue-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -102,7 +102,7 @@
 }
 
 /* Contact information */
-.spisokkont {
+.header__gallery {
   display: flex;
   list-style-type: none;
   padding: 0;
@@ -112,14 +112,14 @@
   align-items: center;
 }
 
-.spisokkont_nach {
+.header__item {
   display: flex;
   text-align: center;
   fill: variables.$grey-color;
   width: 161px;
 }
 
-.spisokkont_nach:hover, .spisokkont_nach:focus {
+.header__item:hover, .header__item:focus {
   display: flex;
   text-align: center;
   fill: variables.$blue-color;
@@ -127,24 +127,24 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.spisokkont_nachinochka {
+.header__logo--contact {
   color: variables.$grey-color;
 }
 
-.spisokkont_nachinochka:hover, .spisokkont_nachinochka:focus {
+.header__logo--contact:hover, .header__logo--contact:focus {
   color: variables.$blue-color;
     transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.spisokkont_svg {
+.header__icon {
   width: 16px;
   height: 12px;
   margin-right: 5px;
   margin: 0;
 }
 
-.spisokkont_svg:hover, .spisokkont_svg:focus {
+.header__icon:hover, .header__icon:focus {
   fill: variables.$blue-color;
     transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

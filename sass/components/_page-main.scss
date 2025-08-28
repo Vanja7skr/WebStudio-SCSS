@@ -42,11 +42,11 @@
 }
 
 /* Features section */
-.osoblivosti {
+.section--features {
   padding: 94px 0;
 }
 
-.osoblivosti_sps {
+.section__gallary--features {
   display: flex;
   list-style-type: none;
   padding: 0;
@@ -56,14 +56,14 @@
   justify-content: space-between;
 }
 
-.osoblivosti_sps_nach_zag {
+.gallary__title--features {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding-bottom: 10px;
 }
 
-.osoblivosti_sps_nachinochka {
+.gallary__aleart--features {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -71,11 +71,11 @@
   width: 270px;
 }
 
-#osoblivosti_sps_nach_id1, #osoblivosti_sps_nach_id4 {
+#gallary__item--features_id1, #gallary__item--features_id4 {
   margin-top: 25px;
 }
 
-#osoblivosti_sps_nach_id1::before {
+#gallary__item--features_id1::before {
   content: url("../img/group1.jpg");
   display: inline-block;
   width: 270px;
@@ -83,7 +83,7 @@
   margin-bottom: 30px;
 }
 
-#osoblivosti_sps_nach_id2::before {
+#gallary__item--features_id2::before {
   content: url("../img/group2.jpg");
   display: inline-block;
   width: 270px;
@@ -91,7 +91,7 @@
   margin-bottom: 30px;
 }
 
-#osoblivosti_sps_nach_id3::before {
+#gallary__item--features_id3::before {
   content: url("../img/group3.jpg");
   display: inline-block;
   width: 270px;
@@ -99,7 +99,7 @@
   margin-bottom: 30px;
 }
 
-#osoblivosti_sps_nach_id4::before {
+#gallary__item--features_id4::before {
   content: url("../img/group4.jpg");
   display: inline-block;
   width: 270px;

@@ -154,11 +154,11 @@
 }
 
 /* Team section */
-.command {
+.section--team {
   background-color: variables.$our_t_color;
 }
 
-.command_zag {
+.section__title--team {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
@@ -167,7 +167,7 @@
   padding-top: 94px;
 }
 
-.command_sps {
+.section__gallery--team {
   display: flex;
   list-style-type: none;
   padding: 0;
@@ -178,7 +178,7 @@
   align-items: center;
 }
 
-.command_sps_nach {
+.gallery__item--team {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -188,12 +188,12 @@
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
-.command_sps_nach_photo {
+.gallery__img--team {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
-.command_sps_nach_zag {
+.gallery__title--team {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -203,7 +203,7 @@
   flex-direction: column;
 }
 
-.command_sps_nach_txt {
+.gallery__aleart--team {
   color: variables.$grey-color;
   padding-bottom: 30px;
   font-family: variables.$font-family;
@@ -215,22 +215,22 @@
 }
 
 /* Social media icons */
-.te_sps {
+.gallery__socials--team {
   display: flex;
   column-gap: 12px;
 }
 
-.te_sps_li {
+.socials__item--team {
   width: 44px;
   height: 44px;
 }
 
-.te_sps_li_a {
+.socials__logo--team {
   width: 100%;
   height: 100%;
 }
 
-.te_sps_li_svg {
+.socials__svg--team {
   fill: variables.$grey-color;
   width: 44px;
   height: 44px; 
@@ -239,18 +239,18 @@
   border-radius: 12px;
 }
 
-.te_sps_li_svg:hover, .te_sps_li_svg:focus  {
+.socials__svg--team:hover, .socials__svg--team:focus  {
   fill: white;
   background-color: variables.$blue-color;
     transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.command_sps_nach_sps_li_a_img {
-  width: 20px;
-  height: 20px;
-  color: variables.$social_color;
-}
+// .command_sps_nach_sps_li_a_img {
+//   width: 20px;
+//   height: 20px;
+//   color: variables.$social_color;
+// }
 
 /* Clients section */
 .clients_h2 {

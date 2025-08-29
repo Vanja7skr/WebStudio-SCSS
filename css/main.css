@@ -1026,14 +1026,14 @@ footer {
   width: 231px;
 }
 
-.zagi {
+.section__logo--footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
 }
 
-.foot {
+.section--footer {
   display: flex;
   align-items: center;
   -moz-column-gap: 70px;
@@ -1041,37 +1041,37 @@ footer {
 }
 
 /* Footer address */
-.footer_adr {
+.section__address--footer {
   padding-top: 20px;
   font-style: normal;
 }
 
-.footer_adr_txt {
+.address__aleart--footer {
   color: rgb(255, 255, 255);
   width: 231px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-
-.footer_adr_sps_nach {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
-.footer_adr_sps_nachi {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  padding-top: 9px;
   padding-bottom: 9px;
 }
 
-.footer_adr_sps_nachinochka {
+.gallery__item--footer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.gallery__item--footer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  padding-bottom: 9px;
+}
+
+.gallery__logo--footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1092,7 +1092,7 @@ footer {
 }
 
 /* Footer subscription */
-.pidps_div {
+.section__div--footer {
   display: flex;
 }
 
@@ -1100,11 +1100,11 @@ footer {
   width: 206px;
 }
 
-.pidps_s {
+.section__sub--footer {
   margin-right: 175px;
 }
 
-.pidps {
+.section__title--footer {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -1114,7 +1114,7 @@ footer {
   margin-bottom: 20px;
 }
 
-.pidps-input {
+.section__input--footer {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   width: 358px;
@@ -1125,7 +1125,7 @@ footer {
   color: white;
 }
 
-.pidps-sub {
+.section__buton--footer {
   border-radius: 4px;
   width: 200px;
   height: 50px;
@@ -1138,7 +1138,7 @@ footer {
   align-items: center;
 }
 
-.pidps-sub-span {
+.section__buton--footer-span {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -1150,7 +1150,7 @@ footer {
   margin-right: 10px;
 }
 
-.pidps-sub-s {
+.section__buton--footer-s {
   background-image: url(../img/plane.png);
   width: 24px;
   height: 24px;

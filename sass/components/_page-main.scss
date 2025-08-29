@@ -253,12 +253,12 @@
 // }
 
 /* Clients section */
-.clients_h2 {
+.section__title--clients {
   margin-top: 94px;
   margin-bottom: 50px;
 }
 
-.clients_ul {
+.section__gallery--clients {
   display: flex;
   justify-content: space-between;
   margin-bottom: 94px;
@@ -269,7 +269,7 @@
   justify-content: space-between;
 }
 
-.clients_li {
+.gallery__item--clients {
   width: 170px;
   border: black 1px solid;
   border-radius: 5px;
@@ -278,7 +278,7 @@
   fill: rgb(174, 176, 184);
 }
 
-.clients_li:hover, .clients_li:focus {
+.gallery__item--clients:hover, .gallery__item--clients:focus {
   fill: variables.$blue-color;
   border-color: variables.$blue-color;
   transition-duration: 250ms;
@@ -286,37 +286,37 @@
 }
 
 /* Client SVG icons */
-#clients_svg1 {
+#gallery__svg--clients1 {
   width: 41px;
   height: 46px;
   margin-top: 23px;
 }
 
-#clients_svg2 {
+#gallery__svg--clients2 {
   width: 40px;
   height: 52px;
   margin-top: 19px;
 }
 
-#clients_svg3 {
+#gallery__svg--clients3 {
   width: 43px;
   height: 41px;
   margin-top: 24px;
 }
 
-#clients_svg4 {
+#gallery__svg--clients4 {
   width: 84px;
   height: 40px;
   margin-top: 24px;
 }
 
-#clients_svg5 {
+#gallery__svg--clients5 {
   width: 62px;
   height: 45px;
   margin-top: 22px;
 }
 
-#clients_svg6 {
+#gallery__svg--clients6 {
   width: 93px;
   height: 43px;
   margin-top: 22px;
